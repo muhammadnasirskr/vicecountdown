@@ -5,4 +5,4 @@ Allow: /
 # Block nothing; this is a public informational site.
 Disallow:
 
-Sitemap: https://vicecountdown.com/sitemap.xml
+Sitemap: https://muhammadnasirskr.github.io/vicecountdown/sitemap.xml
