@@ -1,0 +1,8 @@
+# robots.txt — Vice Countdown
+User-agent: *
+Allow: /
+
+# Block nothing; this is a public informational site.
+Disallow:
+
+Sitemap: https://vicecountdown.com/sitemap.xml

@@ -1,0 +1,14 @@
+# ads.txt — Vice Countdown (Adsterra)
+# ---------------------------------------------------------------------------
+# Adsterra gives you the exact ads.txt line(s) for YOUR account.
+# In the Adsterra dashboard:  Websites  ->  (your site)  ->  "ads.txt"
+# Copy the line(s) shown there and PASTE them below, replacing this whole
+# comment block. Then re-deploy so the file is reachable at:
+#     https://vicecountdown.com/ads.txt
+# Adding the correct ads.txt improves your fill rate and protects revenue.
+#
+# (If you later also run Google AdSense on a different page, add its line too:
+#  google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0 )
+# ---------------------------------------------------------------------------
+
+# >>> paste your Adsterra ads.txt line(s) here <<<

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0612">
+  <title>Contact | Vice Countdown</title>
+  <meta name="description" content="Contact Vice Countdown with a question, correction or feedback about our independent GTA 6 countdown.">
+  <link rel="canonical" href="https://vicecountdown.com/contact.html">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;900&family=Space+Grotesk:wght@700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="wordmark" href="index.html"><span class="wordmark__dot" aria-hidden="true"></span>VICE&nbsp;COUNTDOWN</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="index.html#countdown">Countdown</a>
+        <a class="nav__link" href="index.html#editions">Editions</a>
+        <a class="nav__link" href="index.html#timeline">Preload</a>
+        <a class="nav__link" href="index.html#know">What We Know</a>
+        <a class="nav__link" href="index.html#faq">FAQ</a>
+      </nav>
+      <div class="nav__right">
+        <a class="btn btn--ghost" href="index.html" style="min-height:40px;padding:0 18px;font-size:.85rem">← Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="index.html">Home</a> / Contact</p>
+        <h1>Get in <span style="background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent">touch</span></h1>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:clamp(20px,3vw,32px)">
+      <div class="container">
+        <div class="prose">
+          <p class="lead">Have a correction, a question, or feedback about the site? We'd genuinely like to hear it — especially if you spot a fact that needs updating.</p>
+
+          <p>Email us directly at <a href="mailto:hello@vicecountdown.com">hello@vicecountdown.com</a>, or use the form below.</p>
+
+          <!--
+            FORM SETUP: This form submits via AJAX to Formspree, with inline
+            success/error messages (no page reload) — handled in assets/js/main.js.
+            1. Create a free form at https://formspree.io
+            2. Replace "your-form-id" in the action URL below with your real form ID.
+            Until then, submitting shows a friendly "not connected yet" message.
+            (You can also delete the form and keep only the mailto link above.)
+          -->
+          <form class="form" id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="_subject" placeholder="Correction, question, feedback…">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <!-- honeypot: hidden from humans, catches bots -->
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" class="btn btn--solid" style="justify-self:start">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <p style="margin-top:24px;color:var(--text-lo);font-size:.85rem">
+            By sending a message you agree that we may store and use your details to respond, as described in our
+            <a href="privacy.html">Privacy Policy</a>. We do not add you to any mailing list.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a class="wordmark" href="index.html"><span class="wordmark__dot" aria-hidden="true"></span>VICE&nbsp;COUNTDOWN</a>
+          <p class="footer__desc">An independent fan-run countdown to the Grand Theft Auto VI release. Original design, verified dates, zero leaks.</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col"><h4>Site</h4><ul><li><a href="index.html">Home</a></li><li><a href="news.html">News</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+          <div class="footer__col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="cookies.html">Cookie Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div>
+        </div>
+      </div>
+      <p class="footer__legal">Vice Countdown is an independent fan-run countdown site. It is not affiliated with, endorsed by, or sponsored by Rockstar Games, Take-Two Interactive, Sony Interactive Entertainment or Microsoft. "Grand Theft Auto", "GTA", "Vice City" and related names are trademarks of their respective owners and are used here for identification and commentary only.</p>
+      <div class="footer__meta"><span>© <span id="year">2026</span> Vice Countdown. All rights reserved.</span><span>Last updated: July 17, 2026</span></div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
